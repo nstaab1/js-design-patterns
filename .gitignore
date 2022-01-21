@@ -1,2 +1,4 @@
 #Do not commit node modules
 node_modules/
+
+dist/

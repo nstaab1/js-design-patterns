@@ -1,4 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const singletone_pattern_1 = require("./singleton/singletone-pattern");
-const singletonPattern = new singletone_pattern_1.SingletonPattern();
+const proxy_1 = require("./proxy/proxy");
+// const singletonPattern = new SingletonPattern();
+const proxyTest = new proxy_1.ProxyTest();
