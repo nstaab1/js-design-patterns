@@ -1,5 +1,5 @@
 export class Counter {
-    counter = 0;
+    static counter = 0;
     private static instance: Counter;
 
     public getInstance(): Counter {
@@ -11,14 +11,14 @@ export class Counter {
     }
 
     getCount() {
-        return this.counter;
+        return Counter.counter;
     }
 
     increment() {
-        return this.counter++;
+        return Counter.counter++;
     }
 
     decrement() {
-        return this.counter--;
+        return Counter.counter--;
     }
 }

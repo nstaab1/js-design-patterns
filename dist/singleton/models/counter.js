@@ -2,9 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Counter = void 0;
 class Counter {
-    constructor() {
-        this.counter = 0;
-    }
     getInstance() {
         if (!Counter.instance) {
             Counter.instance = new Counter();
@@ -12,13 +9,14 @@ class Counter {
         return Counter.instance;
     }
     getCount() {
-        return this.counter;
+        return Counter.counter;
     }
     increment() {
-        return this.counter++;
+        return Counter.counter++;
     }
     decrement() {
-        return this.counter--;
+        return Counter.counter--;
     }
 }
 exports.Counter = Counter;
+Counter.counter = 0;
