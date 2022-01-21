@@ -6,10 +6,7 @@ class Counter {
         this.counter = 0;
     }
     getInstance() {
-        if (!Counter.instance) {
-            Counter.instance = new Counter();
-        }
-        return Counter.instance;
+        return this;
     }
     getCount() {
         return this.counter;

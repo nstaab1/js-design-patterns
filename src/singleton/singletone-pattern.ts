@@ -3,7 +3,7 @@ import { Counter } from './models/counter';
 export class SingletonPattern {
     constructor() {
         console.log('Initializing singleton');
-        console.log(this.testInstanceEquality());
+        console.log(`Are instances the same: ${this.testInstanceEquality()}`);
     }
 
     testInstanceEquality(): boolean {

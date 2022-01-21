@@ -1,12 +1,13 @@
 export class Counter {
-    counter: number;
-
-    constructor() {
-        this.counter = 0;
-    }
+    counter = 0;
+    private static instance: Counter;
 
     public getInstance(): Counter {
-        return this;
+        if (!Counter.instance) {
+            Counter.instance = new Counter();
+        }
+
+        return Counter.instance;
     }
 
     getCount() {

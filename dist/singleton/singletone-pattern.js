@@ -5,7 +5,7 @@ const counter_1 = require("./models/counter");
 class SingletonPattern {
     constructor() {
         console.log('Initializing singleton');
-        console.log(this.testInstanceEquality());
+        console.log(`Are instances the same: ${this.testInstanceEquality()}`);
     }
     testInstanceEquality() {
         const counter1 = new counter_1.Counter();
